@@ -4,7 +4,9 @@ import PackageDescription
 let package = Package(
     name: "Swinject",
     products: [
-
+      .library(
+            name: "Swinject",
+            targets: ["Swinject"])
     ],
     dependencies: [
       .package(url: "https://github.com/Quick/Quick", from: "1.1.0"),
